@@ -1,0 +1,46 @@
+React Components
+Components are like functions that return HTML element
+serve same purpose as JavaScript functions
+Example 
+function Display() {
+    return (
+        <div className="display">Hello world , i am learning </div>
+    )
+}
+React Props
+props is a way of handling Components properties. Similar to function arguments
+    Creating prop: text is a prop with a varible skills
+
+<Display text = {skills} />
+
+    Passing the prop
+    Direct props
+
+function Display(props) {
+    return (
+        <div className="display">Hello world , i am learning {props.text}</div>
+    )
+}
+
+    de-structuring a prop
+
+function Display({text}) {
+    return (
+        <div className="display">Hello world , i am learning {text}</div>
+    )
+}
+
+React State
+state is used to change the value of a varible when a component re-renders. State Object is where 
+you store property values that belong to the component.
+
+to import the {useState} Hook from React
+
+import React, { useState } from 'react';
+
+creating a state
+
+const [state, setState] = useState(initialState)
+
+updating state
+setState(newState)
