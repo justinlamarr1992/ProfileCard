@@ -26,9 +26,16 @@ function App() {
   return (
     <section>
       <div className="profile-card">
-        <img src={pic} />
-        <h1>Hi!</h1>
-        <Display title={info} />
+        <div className="pic-div">
+          <img src={pic} />
+        </div>
+        <div className="greeting">
+          <h1>Hi!</h1>
+        </div>
+        <div>
+          <Display title={info} />
+        </div>
+
         <div className="btn-container">
           <Button ClickHandler={handleName} btntext={"Name"} />
           <Button ClickHandler={handleSkill} btntext={"Skills"} />
